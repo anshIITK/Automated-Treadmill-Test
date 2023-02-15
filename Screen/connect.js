@@ -224,7 +224,7 @@ export default function Connect(props) {
     async function savevalues(ecgdata) {
 
         console.log("data value", ecgdata)
-        const url = "https://iot-endsem.herokuapp.com/api/post-report"
+        const url = "" //Enter Your Backend URL
         const data = await AsyncStorage.getItem('values')
         const jsonValue = data != null ? JSON.parse(data) : null;
         fetch(url, {
@@ -698,6 +698,46 @@ const styles = StyleSheet.create({
         borderRadius: 65,
         borderColor: "white",
         borderWidth: 1,
-      }
+      },
+      datacontainer: {
+        marginBottom: 20,
+        marginTop: 10,
+        backgroundColor: "#323344",
+        height: 300,
+        paddingTop: 10,
+        paddingLeft: 10
+
+    },
+    datatext: {
+        flexDirection: "row",
+        justifyContent: "space-evenly",
+        marginTop: 20
+
+    },
+    textstyle1: {
+        color: "green",
+        fontSize: 18
+    },
+    textstyle2: {
+        color: "white",
+        fontSize: 18
+
+    },
+    buttongrp: {
+        flexDirection: "row",
+        justifyContent: "space-evenly",
+        marginTop: 150
+
+    },
+    button: {
+        width: 150,
+        paddingVertical: 8,
+        borderRadius: 4,
+        justifyContent: "center",
+        alignItems: "center",
+    },
+    buttonText: {
+        color: "#fff",
+    },
 
 });

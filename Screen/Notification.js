@@ -23,7 +23,7 @@ import {
     
 
     useEffect(()=>{
-      const url = "https://iot-endsem.herokuapp.com/api/notification"
+      const url = "" //Enter Your Backend URL
   
       fetch(url, {
         method: "get",

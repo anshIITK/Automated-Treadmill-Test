@@ -32,7 +32,7 @@ export default function MomoLogin(props) {
   
 
   const login =()=>{
-    const url = "https://iot-endsem.herokuapp.com/api/login"
+    const url = ""  //Enter Your Backend URL
 
     fetch(url, {
       method: "post",
@@ -46,7 +46,7 @@ export default function MomoLogin(props) {
         "password":password,
                     
       })
-    }).then((response)=> response.json())
+    }).then((response)=> response.text())
     .then((result)=>{
       if(result){
         console.log(result.user)

@@ -19,7 +19,7 @@ export default function Profile() {
     const[data,setdata] = useState([])
 
     useEffect(()=>{
-    const url = "https://iot-endsem.herokuapp.com/api/me"
+    const url = "" //Enter Your Backend URL
 
     fetch(url, {
       method: "get",

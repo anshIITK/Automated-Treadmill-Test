@@ -28,7 +28,7 @@ export default function ReportPage(props) {
   console.log(reload)
 
   useEffect(() => {
-    const url = "https://iot-endsem.herokuapp.com/api/reports"
+    const url = "" //Enter Your Backend URL
 
     fetch(url, {
       method: "get",
